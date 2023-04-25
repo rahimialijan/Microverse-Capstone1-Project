@@ -302,6 +302,9 @@ p {
   footer{
     height: 80px;
   }
+  #break{
+    display: none;
+  }
 }
 
 /* Desktop version style starts from here ------------------------------------------------------------------- */
@@ -378,7 +381,7 @@ p {
       padding-left: 7rem;
     }
     .hero-titles{
-      width: 55%;
+      width: 100%;
     }
     .hello-title{
       font-size: 2.3rem;
@@ -420,10 +423,10 @@ p {
     }
     .program-title{
       color: #fff;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 900;
       position: relative;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       margin-top: 0;
     }
     .program-title::before{
@@ -437,11 +440,11 @@ p {
     }
     .program-card-container{
       display: grid;
-      max-width: 70%;
+      max-width: 80%;
       grid-template-columns: repeat(5, 20%);
       gap: 5px;
       cursor: pointer;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
     .program-card-info{
       grid-column: span 1;
@@ -458,16 +461,18 @@ p {
     }
     .program-card-info h3{
       color: var(--primary-color);
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin: 10px 0;
+      text-align: center;
     }
     .program-card-info p{
       color: #fff;
-      font-size: 1.3rem;
+      font-size: 1rem;
+      text-align: center;
     }
     .program-section h3 a{
       display: block;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #fff;
       font-weight: 350;
       text-decoration: underline;
@@ -477,7 +482,7 @@ p {
     .feature-section{
       background-color: #fff;
       width: 100%;
-      height: 85vh;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -488,25 +493,28 @@ p {
       color: var(--secondary-color);
       font-size: 2rem;
       font-weight: 800;
-      margin: 30px 0;
+      margin-bottom: 30px;
       text-decoration: underline;
       text-underline-offset: 8px;
       text-decoration-color: var(--primary-color);
     }
     .feature-container{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-      width: 65%;
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      gap: 10px;
     }
     .feature-card{
       display: flex;
-      justify-content: space-between;
-      gap: 10px;
+      justify-content:flex-start;
     }
     .img-box{
-      width: 300px;
-      height: 160px;
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      height: 130px;
       position: relative;
+      margin-right: 15px;
     }
     .img-box .bg-icon{
       width: 80px;
@@ -516,23 +524,29 @@ p {
       position: absolute;
       width: 100px;
       height: 100px;
-      top: 20px;
-      left: 20px;
+      top: 15px;
+      left: 32%;
+    }
+    .details-box{
+      display: flex;
+      flex-direction: column;
+      width: 68%;
+      justify-content:flex-start;
     }
     .details-box h4{
       color: var(--secondary-color);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 900;
     }
     .details-box h3{
       color: var(--primary-color);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 700;
       margin: 10px 0;
     }
     .details-box p{
       color: var(--secondary-color);
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
    /* Partner Section style ----------------------------- */
    .partner-section{
