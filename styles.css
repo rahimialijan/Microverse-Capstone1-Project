@@ -376,6 +376,9 @@ p {
   header {
     background-color: #fff;
     height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
   }
 
   .hamburger {
