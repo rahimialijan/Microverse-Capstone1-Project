@@ -1,11 +1,11 @@
 :root {
-    --base-color: #d3d3d3;
-    --primary-color: #ec5242;
-    --secondary-color: #272a31;
-  }
+  --base-color: #d3d3d3;
+  --primary-color: #ec5242;
+  --secondary-color: #272a31;
+}
 
-@media(max-width:768px) {
-  .hero-section{
+@media (max-width: 768px) {
+  .hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,22 +15,25 @@
     background-image: url(images/about_bg_01.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
-.hero-section h2{
+  }
+
+  .hero-section h2 {
     font-size: 1.8rem;
     font-weight: 400;
     color: var(--primary-color);
     margin-bottom: 15px;
-}
-.hero-section h1{
-  font-size: 2.1rem;
-  font-weight: 900;
-  width:90% ;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-  text-align: center;
-}
-.hero-section p{
+  }
+
+  .hero-section h1 {
+    font-size: 2.1rem;
+    font-weight: 900;
+    width: 90%;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero-section p {
     width: 90%;
     padding: 30px 0;
     background-color: #f7f3f3;
@@ -40,487 +43,537 @@
     text-align: center;
     border-radius: 8px;
     margin-bottom: 30px;
-}
-.hero-section span{
+  }
+
+  .hero-section span {
     font-size: 1rem;
     text-align: center;
-}
-.hero-section .email{
+  }
+
+  .hero-section .email {
     font-weight: 700;
     margin-top: 15px;
-}
+  }
 
-.group-pro-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 55vh;
-  background-color: #fff;
-  border-bottom: 1px solid rgb(209, 204, 204);;
-}
-.group-pro-section h2{
-  font-size: 1.6rem;
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 30px;
-  text-align: center;
-  width: 95%;
-}
-.group-pro-section h2::after{
-position: absolute;
-content: '';
-width: 20%;
-height: 2px;
-background-color: var(--primary-color);
-top: 40px;  
-left: 40%;
-}
-.group-pro-section p{
-  text-align: center;
-  font-size: 1.2rem;
-  width: 90%;
-}
-.about-para{
-  display: none;
-}
-.group-pro-section div{
-  width: 90%;
-  padding: 20px 17%;
-  border: 1px solid rgb(209, 204, 204);
-  border-radius: 5px;
-  height: 130px;
-  margin-top: 12px;
-}
-.logo-intro{
-  display: flex;
-  height: 8vh;
-  text-align: center;
-  min-width: 68%;
-  background-color: rgb(13, 2, 53);
-  border: none;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 12px;
-  flex-wrap: nowrap;
-}
-.logo h3{
-  white-space: nowrap;
-}
-.bi-person-workspace{
-  color: var(--primary-color);
-  font-size: 2rem;
-  margin-right: 12px;
-}
-.logo-name{
-color: #fff;
-font-size: 0.9rem;
-line-height: 1.8;
-font-style: italic;
-}
-.group-pro-section .logo-intro{
-  height: 85px;
-}
+  .group-pro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55vh;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(209, 204, 204);
+  }
 
+  .group-pro-section h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 95%;
+  }
 
-.about-project-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 90vh;
-  background-color: #fff;
-}
-.about-project-section h2{
-  font-size: 1.5rem;
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.about-project-section h2::after{
-  position: absolute;
-  content: '';
-  width: 20%;
-  height: 2px;
-  background-color: var(--primary-color);
-  top: 60px;  
-  left: 40%;
-}
-.about-project-section .about-paragh{
-  text-align: center;
-  font-size: 1rem;
-  margin: 20px 0;
-}
-.project-template{
-  display: grid;
-  gap: 15px;
-  grid-template-columns:1fr;
-  justify-content: center;
-  align-items: center;
-  width: 65%;
-}
-.card-template1{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- padding-left: 30px;
- padding-right: 30px;
- background-image: url(images/project-shoots/ecommerce\ sit.PNG);
- height: 200px;
- background-size:100% 100%;
-  background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
-  cursor: pointer;
-}
-.card-template1 p{
-  text-align: center;
-}
-.card-template2{
-  background-image: url(images/project-shoots/online\ clothes\ stor.PNG);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 200px;
-  background-size:100% 100%;
-  background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
-  cursor: pointer;
- }
- .card-template2 p{
-   text-align: center;
-   font-size: 1.2rem;
-   color: #fff;
- }
- .card-template1 p{
-  text-align: center;
-  font-size: 1.2rem;
-  color: #fff;
-}
-.card-template2 h3{
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-}
-.card-template1 h3{
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-}
+  .group-pro-section h2::after {
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 40px;
+    left: 40%;
+  }
 
-#footer{
-  width: 100%;
-  height: 120px;
-  display:  flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--base-color);
-  padding-left: 20px;
- }
-.about-logo{
-  background-color: var(--base-color);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 300px;
- }
- footer .about-name{
-  color:var(--secondary-color);
-  font-weight: 700;
-  line-height: 1;
- }
- footer .about-icon{
-  color: var(--secondary-color);
-  font-weight: 700;
- }
- .copyright-about .about-h4{
-  color: var(--secondary-color);
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 10px;
- }
- .copyright-about .about-p{
-  color: var(--secondary-color);
-  font-size: 1rem;
-  font-weight: 600;
- }
+  .group-pro-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 90%;
+  }
 
- .partner-section-about{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 150px;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
- }
- .partner-title{
-  color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  position: relative;
- }
- .partner-title::before{
-  content: "";
-  width: 50%;
-  height: 3px;
-  background-color: var(--primary-color);
-  position: absolute;
-  top:30px;
-  left: 20px;
- }
- .partner{
-  width: 100px;
- }
- .partners-icon{
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
- }
-}
-
-
-
-@media(min-width:768px){
-  .partner-section-about{
+  .about-para {
     display: none;
   }
-    .hero-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 75vh;
-        background-image: url(images/about_bg_01.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .hero-section h2{
-        font-size: 1.8rem;
-        font-weight: 400;
-        color: var(--primary-color);
-        margin-bottom: 15px;
-    }
-    .hero-section h1{
-      font-size: 2.1rem;
-      font-weight: 900;
-      width:50% ;
-      color: var(--primary-color);
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .hero-section p{
-        width: 58%;
-        padding: 30px 0;
-        background-color: #f7f3f3;
-        border: 1px solid var(--secondary-color);
-        font-size: 1.1rem;
-        line-height: 1.5;
-        text-align: center;
-        border-radius: 8px;
-        margin-bottom: 30px;
-    }
-    .hero-section span{
-        font-size: 1rem;
-        text-align: center;
-    }
-    .hero-section .email{
-        font-weight: 700;
-        margin-top: 15px;
-    }
-    /*section2*/
-    .group-pro-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 55vh;
-        background-color: #fff;
-        border-bottom: 1px solid rgb(209, 204, 204);;
-    }
-    .group-pro-section h2{
-        font-size: 2rem;
-        font-weight: 700;
-        position: relative;
-        margin-bottom: 20px;
-    }
-    .group-pro-section h2::before{
-      position: absolute;
-      content: '';
-      width: 20%;
-      height: 2px;
-      background-color: var(--primary-color);
-      top: 50px;  
-      left: 40%;
-    }
-    .group-pro-section p{
-        text-align: center;
-        font-size: 1.2rem;
-        width: 50%;
-    }
-    .group-pro-section div{
-        width: 50%;
-        padding: 20px;
-        border: 1px solid rgb(209, 204, 204);
-        border-radius: 5px;
-        height: 130px;
-        margin-top: 12px;
-        display: flex;
-        justify-content: center;
-    }
-    .group-pro-section .logo-intro{
-        height: 85px;
-    }
-    .logo-intro{
-      display: flex;
-      height: 8vh;
-      text-align: center;
-      width: 300px;
-      background-color: rgb(13, 2, 53);
-      border: none;
-      border-radius: 5px;
-      justify-content: center;
-      align-items: center;
-      padding: 8px 12px;
-      flex-wrap: nowrap;
-    }
-    .about-project-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 65vh;
-        background-color: #fff;
-    }
-    .about-project-section h2{
-        font-size: 2rem;
-        font-weight: 700;
-        position: relative;
-        margin-bottom: 20px;
-    }
-    .about-project-section h2::before{
-        position: absolute;
-        content: '';
-        width: 20%;
-        height: 2px;
-        background-color: var(--primary-color);
-        top: 50px;  
-        left: 40%;
-      }
-      .about-project-section .about-paragh{
-        text-align: center;
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-      }
-      .project-template{
-        display: grid;
-        gap: 15px;
-        grid-template-columns: repeat(2, 50%);
-        justify-content: center;
-        align-items: center;
-        width: 44%;
-      }
-      .card-template1{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       padding-left: 30px;
-       padding-right: 30px;
-       background-image: url(images/project-shoots/ecommerce\ sit.PNG);
-       height: 280px;
-       background-size:100% 100%;
-        background-repeat: no-repeat;
-        box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
-        cursor: pointer;
-      }
-      .card-template1 p{
-        text-align: center;
-      }
-      .card-template2{
-        background-image: url(images/project-shoots/online\ clothes\ stor.PNG);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
-        height: 280px;
-        background-size:100% 100%;
-        background-repeat: no-repeat;
-        box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
-        cursor: pointer;
-       }
-       .card-template2 p{
-         text-align: center;
-         font-size: 1.2rem;
-         color: #fff;
-       }
-       .card-template1 p{
-        text-align: center;
-        font-size: 1.2rem;
-        color: #fff;
-      }
-      .card-template2 h3{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #fff;
-      }
-      .card-template1 h3{
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #fff;
-      }
-      #footer{
-        width: 100%;
-        height: 120px;
-        display:  flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--secondary-color);
-       }
-      .about-logo{
-        background-color: var(--secondary-color);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-right: 10px;
-       }
-       footer .about-name{
-        color: #fff;
-        font-weight: 900;
-        line-height: 1.2;
-       }
-       footer .about-icon{
-        color: #fff;
-        font-weight: 900;
-       }
-       .copyright-about .about-h4{
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: 900;
-        margin-bottom: 10px;
-       }
-       .copyright-about .about-p{
-        color: #fff;
-        font-size: 1rem;
-        font-weight: 600;
-       }
-   
-    
+
+  .group-pro-section div {
+    width: 90%;
+    padding: 20px 17%;
+    border: 1px solid rgb(209, 204, 204);
+    border-radius: 5px;
+    height: 130px;
+    margin-top: 12px;
+  }
+
+  .logo-intro {
+    display: flex;
+    height: 8vh;
+    text-align: center;
+    min-width: 68%;
+    background-color: rgb(13, 2, 53);
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    flex-wrap: nowrap;
+  }
+
+  .logo h3 {
+    white-space: nowrap;
+  }
+
+  .bi-person-workspace {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-right: 12px;
+  }
+
+  .logo-name {
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    font-style: italic;
+  }
+
+  .group-pro-section .logo-intro {
+    height: 85px;
+  }
+
+  .about-project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #fff;
+  }
+
+  .about-project-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-project-section h2::after {
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 60px;
+    left: 40%;
+  }
+
+  .about-project-section .about-paragh {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+
+  .project-template {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+  }
+
+  .card-template1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url(images/project-shoots/ecommerce\ sit.PNG);
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
+    cursor: pointer;
+  }
+
+  .card-template2 {
+    background-image: url(images/project-shoots/online\ clothes\ stor.PNG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 200px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
+    cursor: pointer;
+  }
+
+  .card-template2 p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .card-template1 p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .card-template2 h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .card-template1 h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  #footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--base-color);
+    padding-left: 20px;
+  }
+
+  .about-logo {
+    background-color: var(--base-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+  }
+
+  footer .about-name {
+    color: var(--secondary-color);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  footer .about-icon {
+    color: var(--secondary-color);
+    font-weight: 700;
+  }
+
+  .copyright-about .about-h4 {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .copyright-about .about-p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .partner-section-about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+  }
+
+  .partner-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .partner-title::before {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+
+  .partner {
+    width: 100px;
+  }
+
+  .partners-icon {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .partner-section-about {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    background-image: url(images/about_bg_01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .hero-section h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.1rem;
+    font-weight: 900;
+    width: 50%;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero-section p {
+    width: 58%;
+    padding: 30px 0;
+    background-color: #f7f3f3;
+    border: 1px solid var(--secondary-color);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+
+  .hero-section span {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-section .email {
+    font-weight: 700;
+    margin-top: 15px;
+  }
+
+  /* section2 */
+  .group-pro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55vh;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(209, 204, 204);
+  }
+
+  .group-pro-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .group-pro-section h2::before {
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 50px;
+    left: 40%;
+  }
+
+  .group-pro-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 50%;
+  }
+
+  .group-pro-section div {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid rgb(209, 204, 204);
+    border-radius: 5px;
+    height: 130px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-intro {
+    display: flex;
+    height: 8vh;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(13, 2, 53);
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    flex-wrap: nowrap;
+  }
+
+  .group-pro-section .logo-intro {
+    height: 85px;
+  }
+
+  .about-project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65vh;
+    background-color: #fff;
+  }
+
+  .about-project-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .about-project-section h2::before {
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 50px;
+    left: 40%;
+  }
+
+  .about-project-section .about-paragh {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .project-template {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-items: center;
+    width: 44%;
+  }
+
+  .card-template1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url(images/project-shoots/ecommerce\ sit.PNG);
+    height: 280px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
+    cursor: pointer;
+  }
+
+  .card-template2 {
+    background-image: url(images/project-shoots/online\ clothes\ stor.PNG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 280px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
+    cursor: pointer;
+  }
+
+  .card-template2 p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .card-template1 p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .card-template2 h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .card-template1 h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  #footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+  }
+
+  .about-logo {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  footer .about-name {
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  footer .about-icon {
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .copyright-about .about-h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+
+  .copyright-about .about-p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
