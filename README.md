@@ -66,7 +66,7 @@
 
 
 - [Live Demo Link](https://rahimialijan.github.io/Microverse-Capstone1-Project/)
-- [Video Demo Link]()
+- [Video Demo Link](https://www.loom.com/share/7cdcaadd0c4c4ba7b6fe9073269f90e3)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,10 +154,20 @@ If you like this project, you are most welcome to Contribute.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
-I would like to thank all of My colleagues and supporters.
+  I would like to thank Microverse and my coding partners, and also give credit to Cindy Shin, the original author of the design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **How to make it mobile friendly?**
+
+  - Put a viewport tag in the header
+
+- **How to design the site?**
+
+  - Draw a mockup before start to code
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

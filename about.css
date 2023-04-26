@@ -28,7 +28,10 @@
     font-size: 2.1rem;
     font-weight: 900;
     width: 90%;
-    color: var(--primary-color);
+    background-image: url(images/titlebg.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: contain;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -330,24 +333,28 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 75vh;
+    height: 85vh;
     background-image: url(images/about_bg_01.png);
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: 90px;
   }
 
   .hero-section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--primary-color);
     margin-bottom: 15px;
   }
 
   .hero-section h1 {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     font-weight: 900;
     width: 50%;
-    color: var(--primary-color);
+    background-image: url(images/titlebg.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: contain;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -381,7 +388,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 55vh;
+    height: 65vh;
     background-color: #fff;
     border-bottom: 1px solid rgb(209, 204, 204);
   }
@@ -444,7 +451,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 65vh;
+    height: 70vh;
     background-color: #fff;
   }
 

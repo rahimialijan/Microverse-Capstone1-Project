@@ -48,7 +48,7 @@ p {
 @media (max-width: 768px) {
   /* Navbar style ----------------------------- */
   header {
-    background-color: #fff;
+    background-color: transparent;
     height: 7vh;
   }
 
@@ -65,6 +65,7 @@ p {
 
   .hamburger {
     display: block;
+    z-index: 1000;
   }
 
   .bar {
@@ -92,7 +93,7 @@ p {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 60px;
+    top: 0;
     gap: 10px;
     flex-direction: column;
     background-color: var(--base-color);
@@ -100,7 +101,7 @@ p {
     transition: 0.3s;
     height: 100%;
     padding-left: 55px;
-    padding-top: 20px;
+    padding-top: 40px;
     z-index: 10;
   }
 
@@ -122,11 +123,12 @@ p {
   /* Hero Section style ----------------------------- */
   #here-section {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     background-image: url(images/mobile_intro_bg.png);
     background-size: 100%;
-    padding-top: 6rem;
-    padding-left: 3rem;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    margin-top: -60px;
   }
 
   .hero-titles {
@@ -141,25 +143,29 @@ p {
   }
 
   .big-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 900;
-    color: var(--primary-color);
-    margin-bottom: 50px;
+    color: transparent;
+    background-image: url(images/titlebg.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    margin-bottom: 40px;
   }
 
-  .hero-titles p {
-    font-size: 1.2rem;
+  .hero-titles .hero-details {
+    font-size: 1rem;
     color: var(--secondary-color);
+    background-color: #ededed45;
+    text-align: left;
+    width: 95%;
+    border: 2px solid #fff;
+    padding: 18px 40px 20px;
   }
 
   .date-title {
     margin-top: 30px;
     font-size: 1.4rem;
     font-weight: 900;
-  }
-
-  .hero-details {
-    margin-left: 18px;
   }
 
   /* Program Section style ----------------------------- */
@@ -193,9 +199,9 @@ p {
 
   .program-card-container {
     display: grid;
-    max-width: 94%;
+    max-width: 96%;
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 6px;
     cursor: pointer;
     margin-bottom: 20px;
   }
@@ -231,13 +237,13 @@ p {
   .program-card-info h3 {
     color: var(--primary-color);
     font-size: 1.2rem;
-    margin: 10px 0;
+    width: 30%;
   }
 
   .program-card-info p {
     color: #fff;
     font-size: 1rem;
-    width: 70%;
+    width: 65%;
   }
 
   .program-section h3 a {
@@ -266,9 +272,17 @@ p {
     font-weight: 700;
     margin: 0;
     margin-bottom: 20px;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-color: var(--primary-color);
+    position: relative;
+  }
+
+  .feature-title::after {
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 3px;
+    background-color: var(--primary-color);
+    top: 30px;
+    right: 38%;
   }
 
   .feature-container {
@@ -364,10 +378,37 @@ p {
   #break {
     display: none;
   }
+
+  .topbar {
+    display: none;
+  }
 }
 
 /* Desktop version style starts from here ------------------------------------------------------------------- */
 @media (min-width: 768px) {
+  .topbar {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: var(--secondary-color);
+  }
+
+  .topbar-menu {
+    display: flex;
+    margin: 0 8rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .topbar-link {
+    margin-left: 15px;
+  }
+
+  .topbar-menu a {
+    color: #fff;
+    font-size: 12px;
+  }
+
   .feature-btn {
     display: none;
   }
@@ -375,10 +416,14 @@ p {
   /* Navbar style ----------------------------- */
   header {
     background-color: #fff;
-    height: 10vh;
+    height: 16vh;
     position: fixed;
     width: 100%;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
   }
 
   .hamburger {
@@ -432,6 +477,11 @@ p {
     margin-left: 20px;
   }
 
+  .cc-cam {
+    border: 5px solid var(--primary-color);
+    padding: 12px;
+  }
+
   .nav-list a {
     width: 100%;
     color: var(--secondary-color);
@@ -456,11 +506,12 @@ p {
   /* Hero Section style ----------------------------- */
   #here-section {
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     background-image: url(images/main_big.png);
     background-size: 100% 100%;
     padding-top: 8rem;
-    padding-left: 7rem;
+    padding-left: 6rem;
+    margin-top: 90px;
   }
 
   .hero-titles {
@@ -477,24 +528,34 @@ p {
   .big-title {
     font-size: 2.6rem;
     font-weight: 900;
-    color: var(--primary-color);
-    margin-bottom: 50px;
-  }
-
-  .hero-titles p {
-    font-size: 1.2rem;
-    color: var(--secondary-color);
-    width: 90%;
-  }
-
-  .date-title {
-    margin-top: 30px;
-    font-size: 1.7rem;
-    font-weight: 900;
+    color: transparent;
+    background-image: url(images/titlebg.jpg);
+    background-size: contain;
+    -webkit-background-clip: text;
+    margin-bottom: 30px;
   }
 
   .hero-details {
     margin-left: 18px;
+  }
+
+  .hero-titles .hero-details {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    background-color: #ededed45;
+    text-align: left;
+    width: 60%;
+    border: 2px solid #fff;
+    padding: 18px 40px 20px;
+  }
+
+  .date-title {
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+
+  .address {
+    margin-bottom: 40px;
   }
 
   /* Program Section style ----------------------------- */
