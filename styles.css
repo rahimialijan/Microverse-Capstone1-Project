@@ -594,6 +594,8 @@ p {
    .partners-icon{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
    }
       /* footer Section style ----------------------------- */
    footer{
