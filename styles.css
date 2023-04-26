@@ -247,22 +247,30 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    position: relative;
   }
   .img-box{
-    width: 200px;
-    height: 160px;
+    display: flex;
+    justify-content: center;
+    width: 82px;
+    height: 130px;
     position: relative;
+    margin-right: 60px;
+  }
+  .my-img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }
   .img-box .bg-icon{
     width: 80px;
     height: 80px;
   }
-  .img-box .person-img{
-    position: absolute;
+  .my-img .person-img{
     width: 100px;
     height: 100px;
-    top: 20px;
-    left: 20px;
   }
   .details-box h4{
     color: var(--secondary-color);
@@ -427,7 +435,7 @@ p {
       font-weight: 900;
       position: relative;
       margin-bottom: 30px;
-      margin-top: 0;
+      top:-30px;
     }
     .program-title::before{
       content: "";
@@ -486,51 +494,58 @@ p {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 30px;
+      justify-content:center;
+      position: relative;
     }
     .feature-title{
+      position: absolute;
       color: var(--secondary-color);
       font-size: 2rem;
       font-weight: 800;
-      margin-bottom: 30px;
       text-decoration: underline;
       text-underline-offset: 8px;
       text-decoration-color: var(--primary-color);
+      top: 10px;
     }
     .feature-container{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       width: 80%;
-      gap: 10px;
+      margin-top: 10px;
     }
     .feature-card{
       display: flex;
       justify-content:flex-start;
+      width: 100%;
+      position: relative;
     }
     .img-box{
       display: flex;
       justify-content: center;
-      width: 30%;
+      width: 82px;
       height: 130px;
       position: relative;
-      margin-right: 15px;
+      margin-right: 60px;
+    }
+    .my-img{
+      border: 2px solid;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
     .img-box .bg-icon{
       width: 80px;
       height: 80px;
     }
-    .img-box .person-img{
-      position: absolute;
+    .my-img .person-img{
       width: 100px;
       height: 100px;
-      top: 15px;
-      left: 32%;
     }
     .details-box{
       display: flex;
       flex-direction: column;
-      width: 68%;
       justify-content:flex-start;
     }
     .details-box h4{
@@ -580,16 +595,21 @@ p {
     display: flex;
     gap: 20px;
    }
-      /* Partner Section style ----------------------------- */
+      /* footer Section style ----------------------------- */
    footer{
     width: 100%;
-    height: 120px;
+    height: 140px;
     display:  flex;
     justify-content: center;
-    align-items: center;
+    gap: 10px;
    }
    .footer-logo{
     background-color: var(--base-color);
+    margin-top: 20px;
+    margin-right: 50px;
+   }
+   .copyright-box{
+    margin-top: 20px;
    }
    footer .logo-name{
     color: var(--secondary-color);

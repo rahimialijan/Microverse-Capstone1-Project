@@ -53,8 +53,8 @@ function generatCards(){
     <div class="feature-card" id="card${id}">
       <div class="img-box">
         <img class="bg-icon" src="images/bg-chessboard-icon.png" alt="background icon">
-        <img class="person-img" src="${image}">
       </div>
+      <div class="my-img"><img class="person-img" src="${image}"></div>
       <div class="details-box">
         <h4>${name}</h4>
         <h3>${skill}</h3>
