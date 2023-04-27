@@ -532,7 +532,6 @@ p {
     background-image: url(images/titlebg.jpg);
     background-size: contain;
     -webkit-background-clip: text;
-    margin-bottom: 25px;
     width: 90%;
   }
 
@@ -544,11 +543,13 @@ p {
     width: 55%;
     border: 2px solid #fff;
     padding: 18px 40px 20px;
+    margin: 20px 0;
   }
 
   .date-title {
     font-size: 1.5rem;
     font-weight: 900;
+    margin-bottom: 8px;
   }
 
   .address {
