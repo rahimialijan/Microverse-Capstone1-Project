@@ -143,7 +143,7 @@ p {
   }
 
   .big-title {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 900;
     color: transparent;
     background-image: url(images/titlebg.jpg);
@@ -201,7 +201,7 @@ p {
     display: grid;
     max-width: 96%;
     grid-template-columns: 1fr;
-    gap: 6px;
+    gap: 10px;
     cursor: pointer;
     margin-bottom: 20px;
   }
@@ -372,7 +372,7 @@ p {
   }
 
   footer {
-    height: 80px;
+    height: 130px;
   }
 
   #break {
@@ -506,11 +506,11 @@ p {
   /* Hero Section style ----------------------------- */
   #here-section {
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     background-image: url(images/main_big.png);
     background-size: 100% 100%;
-    padding-top: 8rem;
-    padding-left: 6rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
     margin-top: 90px;
   }
 
@@ -519,38 +519,35 @@ p {
   }
 
   .hello-title {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 400;
     color: var(--primary-color);
     margin-bottom: 15px;
   }
 
   .big-title {
-    font-size: 2.6rem;
+    font-size: 3.8rem;
     font-weight: 900;
     color: transparent;
     background-image: url(images/titlebg.jpg);
     background-size: contain;
     -webkit-background-clip: text;
-    margin-bottom: 30px;
-  }
-
-  .hero-details {
-    margin-left: 18px;
+    margin-bottom: 25px;
+    width: 90%;
   }
 
   .hero-titles .hero-details {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--secondary-color);
-    background-color: #ededed45;
+    background-color: #f7f7f7f9;
     text-align: left;
-    width: 60%;
+    width: 55%;
     border: 2px solid #fff;
     padding: 18px 40px 20px;
   }
 
   .date-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 900;
   }
 
@@ -565,21 +562,20 @@ p {
 
   .program-section {
     width: 100%;
-    height: 75vh;
+    height: 82vh;
     background-image: url(images/main-background-icon.PNG);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .program-title {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 900;
     position: relative;
-    margin-bottom: 30px;
-    top: -30px;
+    margin: 40px auto;
   }
 
   .program-title::before {
@@ -606,6 +602,7 @@ p {
     display: flex;
     background-color: rgba(255, 255, 255, 0.1);
     flex-direction: column;
+    height: 300px;
     padding: 25px 10px 40px;
     margin: 0 !important;
     justify-content: center;
@@ -633,30 +630,37 @@ p {
   .feature-section {
     background-color: #fff;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
   }
 
   .feature-title {
-    position: absolute;
+    position: relative;
     color: var(--secondary-color);
     font-size: 2rem;
     font-weight: 800;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    text-decoration-color: var(--primary-color);
-    top: 10px;
+    margin: 40px auto;
+  }
+
+  .feature-title::after {
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 3px;
+    background-color: var(--primary-color);
+    top: 40px;
+    right: 38%;
   }
 
   .feature-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
-    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .feature-card {
